@@ -15,9 +15,8 @@ exports.create = (req, res) => {
 
   exports.get = (req, res) => {
     const data = req.body;
-    db.query(`SELECT * FROM tasks
-              WHERE id = ${data.id}`, (err, result) => {
-                res.json(result.rows[0]);
+    db.query(`SELECT * FROM tasks` , (err, result) => {
+                res.json(result.rows);
               });
   };
 

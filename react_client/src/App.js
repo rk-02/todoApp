@@ -1,8 +1,14 @@
+import Header from "./Header";
+import LeftBar from "./LeftBar";
+import MainBlock from "./MainBlock";
+import "./styles.css";
 
 function App() {
   return (
     <div>
-      Hello
+      <Header/>
+      <LeftBar/>
+      <MainBlock/>
     </div>
   );
 }
