@@ -26,7 +26,7 @@ class LeftBar extends React.Component{
             <div id="leftBar">
                 {
                     this.state.taskList.map((task) => (
-                        <div class="barTask" key={task.id}>{task.title}</div>
+                        <div className="barTask" key={task.id}>{task.title}</div>
                     ))
                 }
             </div>
